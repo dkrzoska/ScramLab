@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 Łukasz
 Artur
+=======
+Damian
+Artur
+>>>>>>> 6e297e7e27a0cf43c44bdde55f773cafaf85d41e
