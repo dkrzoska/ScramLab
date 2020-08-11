@@ -6,3 +6,64 @@
 body{
   background-color: #BADA55;
 }
+
+
+
+//features
+
+.features__container {
+  width: 1200px;
+  height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $backgroundScreensColors;
+}
+
+.box{
+  width: 200px;
+  margin: 20px;
+
+  h3 {
+    font-family:$fontOpenSans ;
+    color:$header-FontColorInColumn;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .box_text {
+    margin-top: 10px;
+    font-family: $fontOpenSans;
+    color:$header-FontColorInColumn;
+    text-align: center;
+  }
+}
+
+//newsletter
+
+.newsletter_container {
+  height: 150px;
+  background: $sidePanel-Navigation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    margin-left: 20px;
+    color: $backgroundScreensColors;
+    font-size: 24px;
+    font-family: $fontOpenSans;
+  }
+
+  input{
+    width: 170px;
+    margin-left: 20px;
+  }
+
+  button {
+    background-color: $buttons-Highlights-ScreenHeaders;
+    color: $backgroundScreensColors;
+    border: none;
+    font-family: $fontOpenSans;
+  }
+}
