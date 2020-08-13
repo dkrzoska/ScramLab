@@ -3,6 +3,10 @@
 @import "./settings/_colors.scss";
 @import "./elements/_fonts.scss";
 
+@import "./about";
+@import "./threecolumns";
+@import "./footer";
+
 body{
   background-color: #BADA55;
 }

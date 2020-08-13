@@ -1,0 +1,38 @@
+.aboutme {
+    box-sizing: border-box;
+    font-family: $fontOpenSans;
+    font-size: 24px;
+    line-height: 28px;
+
+    .container {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-around;
+        width: $mainWidth;
+        height: 540px;
+        margin: 0 auto;
+        padding: 100px 70px;
+    }
+
+    h2 {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 20px;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        // border: 1px solid;
+    }
+
+    img {
+        height: 337px;
+        width: 353px;
+        border: 1px solid;
+    }
+
+    div {
+        width: 50%;
+    }
+}
