@@ -1,0 +1,50 @@
+.threecolumns {
+    font-family: $fontOpenSans;
+    font-size: 24px;
+    line-height: 28px;
+    color:#fff;
+    background: $sidePanel-Navigation;
+
+    .container {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        width: $mainWidth;
+        // height: 300px;
+        margin: 0 auto;
+        padding: 50px 0;
+
+        div {
+            width: 300px;
+        }
+
+        h3 {
+            font-size: 32px;
+            line-height: 37px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+
+            li {
+                margin-left: 30px;
+                line-height: 40px;
+            }
+        }
+
+        .newsletter {
+            display: flex;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            width: 200px;
+            font-size: 32px;
+        }
+
+    }
+}
