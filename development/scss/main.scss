@@ -2,12 +2,7 @@
 @import "./settings/all";
 @import "./settings/colors";
 @import "./elements/fonts";
-
-body{
-  font-size: 14px;
-  background-color: #fffffa;
-}
-
+@import "./elements/carousel";
 @import "./about";
 @import "./threecolumns";
 @import "./footer";
