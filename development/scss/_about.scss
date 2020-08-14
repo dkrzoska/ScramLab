@@ -27,7 +27,8 @@
     .img {
         display: flex;
         justify-content: center;
-        background: url(""), $sidePanel-Navigation;
+        background: url("../media/aboutme.jpg") no-repeat center;
+        background-size: cover;
         width: 340px;
         // border: 1px solid;
     }
