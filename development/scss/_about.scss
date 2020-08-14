@@ -20,19 +20,16 @@
         margin-bottom: 20px;
     }
 
-    .img {
-        display: flex;
-        justify-content: center;
-        // border: 1px solid;
-    }
-
-    img {
-        height: 337px;
-        width: 353px;
-        border: 1px solid;
-    }
-
     div {
         width: 50%;
     }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        background: url(""), $sidePanel-Navigation;
+        width: 340px;
+        // border: 1px solid;
+    }
+
 }
