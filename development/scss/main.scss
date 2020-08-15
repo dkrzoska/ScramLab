@@ -1,12 +1,13 @@
+//general
 @import "./generic/reset";
 @import "./settings/all";
 @import "./settings/colors";
 @import "./elements/fonts";
-
+//index.html
 @import "./header";
 @import "./callToAction";
-
 @import "./elements/carousel";
 @import "./about";
 @import "./threecolumns";
 @import "./footer";
+//app.html
