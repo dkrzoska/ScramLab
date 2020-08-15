@@ -1,0 +1,116 @@
+.dashboard {
+    font-family: $fontOpenSans;
+    font-size: 14px;
+}
+
+.adds {
+    display: flex;
+    justify-content: center;
+}
+
+.add {
+    height: 175px;
+    width: 196px;
+    &__recipie {
+        background: lightblue;
+    }
+    &__plan {
+        background: lightcoral;
+        margin: 0 20px;
+    }
+}
+
+.widgets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.widget {
+    display: flex;
+    height: 50px;
+    width: 633px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 50px;
+    border: 1px dashed;
+    background-color: $backgroundScreensColors;
+    .fas {
+        font-size: 34px;
+        padding: 8px;
+        cursor: pointer;
+    }
+    .fa-window-close {
+        margin-left: auto;
+        justify-self: flex-end;
+        font-size: 17px;
+        padding: 4px;
+    }
+    &__info {
+        color: $colorInfoMessage;
+        border-color: $colorInfoMessage;
+    }
+    &__remember {
+        color: $colorWarningMessage;
+        border-color: $colorWarningMessage;
+    }
+    &__great {
+        color: $colorSuccessMessage;
+        border-color: $colorSuccessMessage;
+    }
+    &__text {
+        padding: 0 10px;
+    }
+}
+
+.yourplan {
+    width: 1070px;
+    font-size: 20px;
+    color: $colorTextRows-FunctionIcons;
+    border: 1px $colorTextRows-FunctionIcons dashed;
+    margin: 30px auto 0px;
+    .week {
+        color: $buttons-Highlights-ScreenHeaders;
+        font-weight: 700;
+        line-height: 43px;
+        text-align: center;
+    }
+    table {
+        width: 973px;
+        margin: 0 auto;
+    }
+    th {
+        color: $sidePanel-Navigation;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: left;
+        border-top: 1px solid $colorTextRows-FunctionIcons;
+        border-bottom: 1px solid $colorTextRows-FunctionIcons;
+        padding: 0 10px;
+    }
+    td {
+        border-bottom: 1px solid $colorTextRows-FunctionIcons;
+        padding: 15px 10px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 50px;
+        color: $buttons-Highlights-ScreenHeaders;
+        font-size: 14px;
+        padding: 5px;
+
+        .nav {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .fas{
+            font-size: 20px;
+            padding: 5px;
+        }
+    }
+}
