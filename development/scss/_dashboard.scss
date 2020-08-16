@@ -5,7 +5,9 @@
 
 .adds {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
+    width: 1070px;
+    margin: 0 auto;
 }
 
 .add {
@@ -21,9 +23,9 @@
 }
 
 .widgets {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
 }
 
 .widget {
@@ -35,6 +37,7 @@
     line-height: 50px;
     border: 1px dashed;
     background-color: $backgroundScreensColors;
+    margin-bottom: 5px;
     .fas {
         font-size: 34px;
         padding: 8px;
