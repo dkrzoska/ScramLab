@@ -19,6 +19,12 @@
     }
 }
 
+.side-pannel {
+    width: 200px;
+    height: calc(100vh - 80px);
+    background: $sidePanel-Navigation;
+}
+
 .side-pannel-menu {
     display: flex;
     flex-direction: column;
