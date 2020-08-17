@@ -19,9 +19,14 @@
     }
 }
 
+.main-app-view {
+    display: flex;
+}
+
 .side-pannel {
     width: 200px;
-    height: calc(100vh - 80px);
+    // height: calc(100vh - 80px);
+    height: 690px;
     background: $sidePanel-Navigation;
 }
 
