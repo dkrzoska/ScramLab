@@ -6,10 +6,13 @@
 //index.html
 @import "./header";
 @import "./callToAction";
-@import "./elements/carousel";
+@import "./carousel";
 @import "./about";
 @import "./threecolumns";
 @import "./footer";
 //app.html
-@import "./dashboard";
+@import "./mainAppView";
+@import "./message_form";
 @import "./addplan";
+@import "./dashboard";
+@import "./new_recipes";

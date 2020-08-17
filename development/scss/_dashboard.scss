@@ -1,6 +1,7 @@
 .app__dashboard {
     font-family: $fontOpenSans;
     font-size: 14px;
+    margin: 30px auto 0;
 }
 
 .adds {
@@ -10,22 +11,40 @@
     margin: 0 auto;
 }
 
-.add {
-    height: 175px;
-    width: 196px;
-    &__recipie {
-        background: lightblue;
-    }
-    &__plan {
-        background: lightcoral;
-        margin: 0 20px;
-    }
-}
+.desktop_add_wrapper {
+    color:$colorSuccessMessage;
+    width: 416px;
+    // height: 400px;
+    display: flex;
+    justify-content: space-between;
+    // margin-top: 40px;
+    // margin-left: 40px;
+    .add {
+        width: 196px;
+        height: 173px;
+        border : 1px solid $colorSuccessMessage;
+        border-style: dashed;
+        text-align: center;
+        cursor: pointer;
+        i {
+            font-size: 38px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border: 5px solid $colorSuccessMessage;
+            border-radius: 15px;
+            padding: 7px;
+        };
+        p {
+            font-family: $fontOpenSans;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    };
+};
 
 .widgets {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .widget {
