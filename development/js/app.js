@@ -1,3 +1,10 @@
+//showdashboard
+const desktop = document.querySelector(".desktop");
+const messageForm = document.querySelector(".message_form");
+desktop.addEventListener ("click", ev => {
+    dashboard.style.display = "block";
+    messageForm.style.display = "none";
+});
 //close info in dash board
 const closeInfo = document.querySelectorAll(".widget");
 closeInfo.forEach ( el => {
