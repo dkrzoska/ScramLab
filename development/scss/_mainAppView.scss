@@ -28,7 +28,8 @@
     // height: calc(100vh - 80px);
     height: 690px;
     background: $sidePanel-Navigation;
-}
+    float: left;
+};
 
 .side-pannel-menu {
     display: flex;

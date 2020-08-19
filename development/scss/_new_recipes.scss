@@ -2,8 +2,10 @@
     border: 1px solid black;
     border-style: dashed;
     font-family: $fontOpenSans;
-    width: 900px;
+    width: $mainWidth;
     height: 630px;
+    margin: 0 auto;
+    margin-top: 30px;
 };
 
 .new_recipes_wrapper {
