@@ -1,6 +1,7 @@
 
 .slider{
-	max-width: $mainWidth;
+	width: 100%;
+	// max-width: $mainWidth;
 	height: 500px;
 	margin: 0 auto;
 	position: relative;
@@ -32,8 +33,8 @@
 }
 
 .slider .slider-items .item img{
-	width: 90%;
-	margin-left: 60px;
+	width: 100%;
+	// margin-left: 60px;
 	height: 100%;
 	display: block;
 	animation:zoom 1s ease;
@@ -57,4 +58,5 @@
 .item {
 	text-align: center;
 }
+
 

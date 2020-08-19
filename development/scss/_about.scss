@@ -7,21 +7,22 @@
     .container {
         display: flex;
         box-sizing: border-box;
-        justify-content: space-around;
+        justify-content: space-between;
         width: $mainWidth;
         height: 540px;
         margin: 0 auto;
-        padding: 100px 70px;
+        padding: 80px 0;
     }
 
     h2 {
-        font-size: 36px;
+        font-size: 32px;
         line-height: 42px;
         margin-bottom: 20px;
     }
 
     div {
-        width: 50%;
+        width: 60%;
+        font-size: 24px;
     }
 
     .img {
