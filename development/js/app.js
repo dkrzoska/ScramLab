@@ -42,3 +42,24 @@ saveClose.addEventListener ("click", ev => {
     addPlan.style.display = "none";
     dashboard.style.display = "block";
 });
+
+// add name
+
+const a = document.querySelector(".mesage_form_button");
+const b = document.querySelector(".message_form_container").querySelector("input")
+const userName = document.querySelector(".user-name");
+a.addEventListener ("click", ev => {
+    userName.innerText = b.value;
+    if (b.value.length < 0){
+        dashboard.style.display = "none";
+        messageForm.style.display = "block";
+    } else {
+        dashboard.style.display = "block";
+        messageForm.style.display = "none";
+    }
+ 
+    const savedUserName =  b.value;
+    localStorage.setItem('savedName' , savedUserName);
+    console.log("Twoje imię to: ", localStorage.savedUserName);
+});
+
