@@ -1,37 +1,9 @@
-//reload
-let ok = false;
-const reload = document.querySelector(".user-logo");
-reload.addEventListener ("click", ev => {
-    location.reload();
-    return false;
-});
-const recipiesList = document.querySelector(".recipies");
-const planList = document.querySelector(".plans");
-
-
-
+//showdashboard
 const desktop = document.querySelector(".desktop");
 const messageForm = document.querySelector(".message_form");
-//showdashboard
-// desktop.addEventListener ("click", ev => {
-//     dashboard.style.display = "block";
-//     messageForm.style.display = "none";
-// });
-const a = document.querySelector(".mesage_form_button");
-const b = document.querySelector(".message_form_container").querySelector("input")
-const userName = document.querySelector(".user-name");
-a.addEventListener ("click", ev => {
-    userName.innerText = b.value;
-    if (b.value.length < 0){
-        dashboard.style.display = "none";
-        messageForm.style.display = "block";
-    } else {
-        dashboard.style.display = "block";
-        messageForm.style.display = "none";
-    }
-    // const savedUserName =  b.value;
-    // window.localStorage.setItem('savedName' , savedUserName);
-    // console.log("Twoje imię to: ", window.localStorage.savedUserName);
+desktop.addEventListener ("click", ev => {
+    dashboard.style.display = "block";
+    messageForm.style.display = "none";
 });
 //close info in dash board
 const closeInfo = document.querySelectorAll(".widget");
@@ -61,7 +33,7 @@ saveClose.addEventListener ("click", ev => {
             tableFilled[i].push(el.querySelector("select").value);
         });
     });
-    // console.log(tableFilled);
+    console.log(tableFilled);
     tableFill.forEach ((el, i) => {
         el.querySelectorAll("td").forEach ((el, j) => {
             el.innerText = tableFilled[i][j];
@@ -73,4 +45,21 @@ saveClose.addEventListener ("click", ev => {
 
 // add name
 
+const a = document.querySelector(".mesage_form_button");
+const b = document.querySelector(".message_form_container").querySelector("input")
+const userName = document.querySelector(".user-name");
+a.addEventListener ("click", ev => {
+    userName.innerText = b.value;
+    if (b.value.length < 0){
+        dashboard.style.display = "none";
+        messageForm.style.display = "block";
+    } else {
+        dashboard.style.display = "block";
+        messageForm.style.display = "none";
+    }
+
+    const savedUserName =  b.value;
+    localStorage.setItem('savedName' , savedUserName);
+    console.log("Twoje imię to: ", localStorage.savedUserName);
+});
 
