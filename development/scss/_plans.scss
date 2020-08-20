@@ -2,7 +2,7 @@ div {
     box-sizing: border-box;
 }
 
-.app__recipies{
+.app__plan{
     height: 630px;
     width: 1070px;
     font-family: $fontOpenSans;
@@ -89,9 +89,12 @@ div {
             width: 220px;
         }
         &__3 {
-            width: 550px;
+            width: 480px;
         }
         &__4 {
+            width: 100px;
+        }
+        &__5 {
             div {
                 display: inline-block;
             }
