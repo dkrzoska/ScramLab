@@ -44,12 +44,56 @@ addRecipes.addEventListener ("click", ev => {
     dashboard.style.display = "none";
     newRecipes.style.display = "block";
 });
+const instructions = document.querySelector(".instructions");
+const instructionsTextarea = instructions.querySelector("textarea");
+const instructionsButton = instructions.querySelector("i");
+const instructionsList = instructions.querySelector(".instructions_list");
+instructionsButton.addEventListener("click", ev => {
+    newLi = document.createElement("li");
+    newLi.innerText = instructionsTextarea.value;
+    instructionsList.appendChild(newLi);
+    instructionsTextarea.value = null;
+});
+const ingredients = document.querySelector(".ingredients");
+const ingredientsTextarea = ingredients.querySelector("textarea");
+const ingredientsButton = ingredients.querySelector("i");
+const ingredientsList = ingredients.querySelector(".ingredients_list");
+ingredientsButton.addEventListener("click", ev => {
+    newLi = document.createElement("li");
+    newLi.innerText = ingredientsTextarea.value;
+    ingredientsList.appendChild(newLi);
+    ingredientsTextarea.value = null;
+});
+
 
 //close and save new recipe
 const newRecipesButton = document.querySelector(".new_recipes_button");
+const recipesList = document.querySelector(".recipies__list");
 newRecipesButton.addEventListener ("click", ev => {
+    const recipeID = parseInt(recipesList.lastElementChild.id) + 1;
+    let recipeName = document.querySelector("#recipe_title");
+    let recipeDescription = document.querySelector("#recipe_description");
+    let newDIV = document.createElement("div");
+    newDIV.classList.add("recipie");
+    newDIV.id = recipeID;
+    newDIV.innerHTML = `<div class="col col__1">${recipeID}</div><div class="col col__2">${recipeName.value}</div>
+    <div class="col col__3">${recipeDescription.value}</div>
+    <div class="col col__4">
+    <div class="action action__edit"></div>
+    <div class="action action__remove"></div>
+    </div>`;
+    recipesList.appendChild(newDIV);
     newRecipes.style.display = "none";
-    appRecipies.style.display="block";
+    appRecipies.style.display = "block";
+    recipeName.value = null;
+    recipeDescription.value = null;
+    const actionRemove = document.querySelectorAll(".action__remove");
+    actionRemove.forEach( el => {
+        el.addEventListener ("click", ev => {
+            const recipieToRemove = el.parentElement.parentElement;
+            recipieToRemove.parentElement.removeChild(recipieToRemove);
+        });
+    });
 });
 
 //add plan
@@ -124,7 +168,7 @@ appPlansClose.addEventListener ("click", ev => {
     addPlan.style.display = "block";
 });
 
-//remove recipe and plan
+// remove recipe and plan
 const actionRemove = document.querySelectorAll(".action__remove");
 actionRemove.forEach( el => {
     el.addEventListener ("click", ev => {

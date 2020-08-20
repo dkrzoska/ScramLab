@@ -58,8 +58,6 @@
     margin-top: 9px;
 };
 
-
-
 .recipe_name, .recipe_description {
     display: flex;
     justify-content: space-between;
@@ -139,8 +137,12 @@
 textarea {
     font-family: $fontOpenSans;
     font-size: 15px;
+};
+
+.instructions_list {
+    list-style-type: decimal;
+};
+
+.ingredients_list {
+    list-style-type: disc;
 }
-
-
-
-
