@@ -40,10 +40,28 @@ closeInfo.forEach ( el => {
 //add recipie
 const addRecipes = document.querySelector(".add__recipes");
 const newRecipes = document.querySelector(".new_recipes");
+const newRecipesTitle = document.querySelector(".new_recipes_title");
 addRecipes.addEventListener ("click", ev => {
+    newRecipesTitle.innerText = "NOWY PRZEPIS";
     dashboard.style.display = "none";
     newRecipes.style.display = "block";
 });
+
+//edit recipe
+const editRecipe = document.querySelector(".app__recipies").querySelectorAll(".action__edit");
+editRecipe.forEach(el => {
+    el.addEventListener("click", ev => {
+        const recipeRow = el.parentElement.parentElement;
+        let recipeName = document.querySelector("#recipe_title");
+        let recipeDescription = document.querySelector("#recipe_description");
+        recipeName.value = recipeRow.querySelector(".col__2").innerText;
+        recipeDescription.value = recipeRow.querySelector(".col__3").innerText;
+        newRecipesTitle.innerText = "EDYCJA PRZEPISU";
+        appRecipies.style.display="none";
+        newRecipes.style.display = "block";
+    });
+});
+
 const instructions = document.querySelector(".instructions");
 const instructionsTextarea = instructions.querySelector("textarea");
 const instructionsButton = instructions.querySelector("i");
@@ -54,6 +72,7 @@ instructionsButton.addEventListener("click", ev => {
     instructionsList.appendChild(newLi);
     instructionsTextarea.value = null;
 });
+
 const ingredients = document.querySelector(".ingredients");
 const ingredientsTextarea = ingredients.querySelector("textarea");
 const ingredientsButton = ingredients.querySelector("i");
@@ -64,7 +83,6 @@ ingredientsButton.addEventListener("click", ev => {
     ingredientsList.appendChild(newLi);
     ingredientsTextarea.value = null;
 });
-
 
 //close and save new recipe
 const newRecipesButton = document.querySelector(".new_recipes_button");
